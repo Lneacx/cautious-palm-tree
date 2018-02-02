@@ -320,6 +320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 458076999}
   - component: {fileID: 458076998}
+  - component: {fileID: 458077000}
   m_Layer: 0
   m_Name: ForegroundDirt
   m_TagString: Untagged
@@ -384,6 +385,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &458077000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 458076997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 770d043cd8ed97a459f190e62de81051, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetX: 2
+  hasARightBuddy: 0
+  hasALeftBuddy: 0
+  reverseScale: 0
 --- !u!1 &605611929
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,6 +409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 605611931}
   - component: {fileID: 605611930}
+  - component: {fileID: 605611932}
   m_Layer: 0
   m_Name: BackgroundMountainsBlue
   m_TagString: Untagged
@@ -457,6 +474,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &605611932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 605611929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 770d043cd8ed97a459f190e62de81051, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetX: 2
+  hasARightBuddy: 0
+  hasALeftBuddy: 0
+  reverseScale: 1
 --- !u!1 &984173065
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,6 +498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 984173067}
   - component: {fileID: 984173066}
+  - component: {fileID: 984173068}
   m_Layer: 0
   m_Name: BackgroundMountainsPurple
   m_TagString: Untagged
@@ -530,6 +563,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &984173068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 984173065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 770d043cd8ed97a459f190e62de81051, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetX: 2
+  hasARightBuddy: 0
+  hasALeftBuddy: 0
+  reverseScale: 1
 --- !u!4 &1126084324 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
@@ -799,6 +847,10 @@ Prefab:
       propertyPath: m_WhatIsGround.m_Bits
       value: 4294967039
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: m_MaxSpeed
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
   m_IsPrefabParent: 0
@@ -974,4 +1026,4 @@ MonoBehaviour:
   lookAheadFactor: 1.5
   lookAheadReturnSpeed: 0.5
   lookAheadMoveThreshold: 0.1
-  yPosRestriction: -1
+  yPosRestriction: 0
